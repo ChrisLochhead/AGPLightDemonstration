@@ -1,0 +1,11 @@
+*.obj
+*.dll
+*.bmp
+ASSIMPProject/Debug/*
+ASSIMPProject/.vs/*
+ASSIMPProject/ASSIMPProject/Debug/*
+ASSIMPProject/ASSIMPProject/SOIL2/*
+ASSIMPProject/ASSIMPProject/res/*
+ASSIMPProject/ASSIMPProject/Assimp/*
+AGPAssessment/AGPAssessment/Debug/*
+AGPAssessment/.vs/*
