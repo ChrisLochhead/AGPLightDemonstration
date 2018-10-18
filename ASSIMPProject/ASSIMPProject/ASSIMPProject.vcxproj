@@ -124,9 +124,11 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="SkyBox.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\AGP-Lab3\AGP-Lab3\AGP-Lab3\res\shaders\modelLoading.frag" />
@@ -135,6 +137,8 @@
     <None Include="lamp.vert" />
     <None Include="lighting.frag" />
     <None Include="Lighting.vert" />
+    <None Include="skybox.frag" />
+    <None Include="skybox.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
