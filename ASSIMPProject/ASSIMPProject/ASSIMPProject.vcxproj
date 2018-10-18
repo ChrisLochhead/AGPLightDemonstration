@@ -129,14 +129,13 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="Tutorial.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\AGP-Lab3\AGP-Lab3\AGP-Lab3\res\shaders\modelLoading.frag" />
-    <None Include="..\..\..\AGP-Lab3\AGP-Lab3\AGP-Lab3\res\shaders\modelLoading.vs" />
-    <None Include="lamp.frag" />
-    <None Include="lamp.vert" />
-    <None Include="lighting.frag" />
-    <None Include="Lighting.vert" />
+    <None Include="multiLightTutorial.frag" />
+    <None Include="multiLightTutorial.vert" />
+    <None Include="res\shaders\modelLoading.frag" />
+    <None Include="res\shaders\modelLoading.vert" />
     <None Include="skybox.frag" />
     <None Include="skybox.vert" />
   </ItemGroup>

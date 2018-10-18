@@ -1,3 +1,11 @@
+/*
+
+uncomment for the actual solo project
+
+*/
+
+
+
 // Std. Includes
 #include <string>
 #include <stack>
@@ -216,7 +224,7 @@ int initGlew() {
 void init() {
 
 	// Setup and compile our shaders
-	 shader = new Shader("res/shaders/modelLoading.vs", "res/shaders/modelLoading.frag");
+	 shader = new Shader("res/shaders/modelLoading.vert", "res/shaders/modelLoading.frag");
 
 	// Load models
 	 grassModel = new Model("res/grassObject/grass.obj");
@@ -578,6 +586,3 @@ void MouseCallback( GLFWwindow *window, double xPos, double yPos )
     
     camera.ProcessMouseMovement( xOffset, yOffset );
 }
-
-
-
