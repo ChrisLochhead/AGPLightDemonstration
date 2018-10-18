@@ -45,12 +45,13 @@ GLfloat lastFrame = 0.0f;
 GLFWwindow *window;
 
 // Setup and compile our shaders
-Shader *shader;// ("res/shaders/modelLoading.vs", "res/shaders/modelLoading.frag");
+Shader *shader;
 
 // Load models
-Model *floorModel;// ("res/CubeObject/okcube.obj");
-Model *wallModel;// ("res/CubeObject/okcube.obj");
-Model *characterModel;// ("res/models/nanosuit.obj");
+Model *floorModel;
+Model *wallModel;
+Model *characterModel;
+Model *grassModel;
 
 //matrices
 glm::mat4 projection;
@@ -218,6 +219,7 @@ void init() {
 	 shader = new Shader("res/shaders/modelLoading.vs", "res/shaders/modelLoading.frag");
 
 	// Load models
+	 grassModel = new Model("res/grassObject/grass.obj");
 	 floorModel = new Model("res/FloorObject/floor.obj");
 	 wallModel = new Model("res/CubeObject/okcube.obj");
 	 characterModel = new Model("res/models/nanosuit.obj");
@@ -277,7 +279,8 @@ void setDirLight(dirLightStruct dirLight)
 
 void draw()
 {
-	// floor
+
+	// dirt floor
 	mStack.push(model);
 	mStack.top() = glm::translate(mStack.top(), glm::vec3(20.0f, 0.15f, -10.0f));
 	mStack.top() = glm::rotate(mStack.top(), glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
